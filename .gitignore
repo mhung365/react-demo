@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+*.local
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs & cache
+*.log
+npm-debug.log*
+.cache/
+.vite/
+
+# IDE / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/*.suo
+
+# Test
+coverage/
