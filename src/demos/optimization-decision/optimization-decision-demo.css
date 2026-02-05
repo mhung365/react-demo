@@ -1,0 +1,345 @@
+/* Optimization decision demo */
+.opt-decision {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.opt-decision__header {
+  margin-bottom: 1.5rem;
+}
+
+.opt-decision__header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.opt-decision__subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+}
+
+.opt-decision__tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.opt-decision__tabs button {
+  padding: 0.5rem 1rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.opt-decision__tabs button:hover {
+  background: #3f3f46;
+}
+
+.opt-decision__tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.opt-decision__criteria {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.opt-decision__criteria h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.opt-decision__criteria table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.opt-decision__criteria th,
+.opt-decision__criteria td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #27272a;
+}
+
+.opt-decision__criteria th {
+  color: #a1a1aa;
+  font-weight: 600;
+}
+
+.opt-decision__criteria td {
+  color: #d4d4d8;
+}
+
+.opt-decision__criteria .badge--harmless { color: #86efac; }
+.opt-decision__criteria .badge--tolerable { color: #fcd34d; }
+.opt-decision__criteria .badge--must-fix { color: #f87171; }
+
+/* Dashboard layout */
+.opt-dash {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.opt-dash--wrong {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.2);
+}
+
+.opt-dash--right {
+  border-color: #15803d;
+  box-shadow: 0 0 0 1px rgba(21, 128, 61, 0.2);
+}
+
+.opt-dash__layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+}
+
+.opt-dash__header {
+  grid-area: header;
+  padding: 0.75rem;
+  background: #27272a;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.opt-dash__header h1 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.opt-dash__sidebar {
+  grid-area: sidebar;
+  padding: 0.75rem;
+  background: #27272a;
+  border-radius: 6px;
+  min-width: 120px;
+}
+
+.opt-dash__sidebar p {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+.opt-dash__sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.35rem;
+  padding: 0.35rem 0.5rem;
+  background: #18181b;
+  border: 1px solid #3f3f46;
+  border-radius: 4px;
+  color: #e4e4e7;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.opt-dash__sidebar button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.opt-dash__sidebar button:hover {
+  background: #3f3f46;
+}
+
+.opt-dash__main {
+  grid-area: main;
+  padding: 0.75rem;
+  background: #27272a;
+  border-radius: 6px;
+}
+
+.opt-dash__actions {
+  margin-bottom: 0.75rem;
+}
+
+.opt-dash__actions button {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  background: #3b82f6;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.opt-dash__actions button:hover {
+  background: #2563eb;
+}
+
+.opt-dash__widgets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.opt-dash__card {
+  padding: 0.5rem 0.75rem;
+  background: #18181b;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.opt-dash__list {
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.opt-dash__list ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.opt-dash__chart {
+  padding: 0.75rem;
+  background: #18181b;
+  border-radius: 6px;
+  border: 1px solid #3f3f46;
+}
+
+.opt-dash__chart-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+.opt-dash__chart-placeholder {
+  padding: 1rem;
+  background: #27272a;
+  border-radius: 4px;
+  color: #71717a;
+  font-size: 0.9rem;
+}
+
+.opt-dash__chart button {
+  margin-bottom: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  background: #3b82f6;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.opt-dash__hint {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #27272a;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+.opt-dash__hint code {
+  background: #18181b;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.opt-dash__hint--bad {
+  border-left: 3px solid #f59e0b;
+}
+
+.opt-dash__hint--good {
+  border-left: 3px solid #15803d;
+}
+
+/* Classification panel */
+.opt-decision-panel {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #27272a;
+  border-radius: 6px;
+}
+
+.opt-decision-panel h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #e4e4e7;
+}
+
+.opt-decision-panel__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.opt-decision-panel__table th,
+.opt-decision-panel__table td {
+  padding: 0.4rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #3f3f46;
+}
+
+.opt-decision-panel__table th {
+  color: #a1a1aa;
+  font-weight: 600;
+}
+
+.opt-decision-panel__table td code {
+  background: #18181b;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.opt-decision-panel__badge {
+  font-weight: 600;
+}
+
+.opt-decision-panel__badge--harmless { color: #86efac; }
+.opt-decision-panel__badge--tolerable { color: #fcd34d; }
+.opt-decision-panel__badge--must-fix { color: #f87171; }
+
+.opt-decision-panel__verdict {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+.opt-decision-panel__verdict--bad {
+  color: #fcd34d;
+}
+
+.opt-decision-panel__verdict--good {
+  color: #86efac;
+}
+
+.opt-decision-panel__hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: #71717a;
+}

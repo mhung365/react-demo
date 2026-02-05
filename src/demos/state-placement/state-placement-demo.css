@@ -1,0 +1,248 @@
+/* State placement demo shell */
+.placement-demo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.placement-demo__header {
+  margin-bottom: 1.5rem;
+}
+
+.placement-demo__header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.placement-demo__subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+  line-height: 1.5;
+}
+
+.placement-demo__subtitle code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.placement-demo__tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.placement-demo__tabs button {
+  padding: 0.5rem 1rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.placement-demo__tabs button:hover {
+  background: #3f3f46;
+}
+
+.placement-demo__tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.placement-demo__concepts {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.placement-demo__concepts h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.placement-demo__concepts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: #d4d4d8;
+}
+
+.placement-demo__concepts code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* Dashboard sections (shared by ColocatedTooLow, LiftedTooHigh, BalancedState) */
+.placement-dashboard {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.placement-dashboard--wrong {
+  border: 1px solid #3f3f46;
+  background: #18181b;
+}
+
+.placement-dashboard--correct {
+  border: 1px solid #15803d;
+  box-shadow: 0 0 0 1px rgba(21, 128, 61, 0.2);
+  background: #18181b;
+}
+
+.placement-dashboard__header {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #27272a;
+}
+
+.placement-dashboard__header h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.placement-dashboard__header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+  line-height: 1.5;
+}
+
+.placement-dashboard__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  min-height: 280px;
+}
+
+@media (max-width: 700px) {
+  .placement-dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.placement-panel {
+  padding: 1rem 1.25rem;
+  border-right: 1px solid #27272a;
+  overflow: auto;
+}
+
+.placement-panel:last-child {
+  border-right: none;
+}
+
+@media (max-width: 700px) {
+  .placement-panel {
+    border-right: none;
+    border-bottom: 1px solid #27272a;
+  }
+  .placement-panel:last-child {
+    border-bottom: none;
+  }
+}
+
+.placement-panel h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.placement-panel--filters input,
+.placement-panel--filters select {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  color: #e4e4e7;
+  font-size: 0.9rem;
+}
+
+.placement-panel--list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.placement-panel--list li {
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.placement-panel--list li:hover {
+  background: #27272a;
+}
+
+.placement-panel--list li.selected {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.placement-panel__hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.75rem;
+  color: #71717a;
+  line-height: 1.4;
+}
+
+.placement-panel__hint--wrong {
+  color: #f87171;
+}
+
+/* Deep tree: Layout and ContentArea (lifted vs refactored) */
+.placement-layout,
+.placement-content-area {
+  margin-bottom: 0.75rem;
+}
+
+.placement-layout__hint,
+.placement-content-area__hint {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  color: #71717a;
+  line-height: 1.4;
+}
+
+.placement-layout__hint--correct,
+.placement-content-area__hint--correct {
+  color: #22c55e;
+}
+
+.placement-demo__sub-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.placement-demo__sub-tabs button {
+  padding: 0.4rem 0.75rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.placement-demo__sub-tabs button:hover {
+  background: #3f3f46;
+}
+
+.placement-demo__sub-tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}

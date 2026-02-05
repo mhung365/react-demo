@@ -1,0 +1,5 @@
+export { ExpensiveChildDemo } from './ExpensiveChildDemo'
+export { ParentBroken } from './ParentBroken'
+export { ParentFixed } from './ParentFixed'
+export { ExpensiveChild } from './ExpensiveChild'
+export type { ChildConfig } from './types'

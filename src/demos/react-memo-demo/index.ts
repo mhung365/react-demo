@@ -1,0 +1,7 @@
+export { MemoDemo } from './MemoDemo'
+export { MemoWorks } from './MemoWorks'
+export { MemoFailsPropsRef } from './MemoFailsPropsRef'
+export { MemoFailsContext } from './MemoFailsContext'
+export { MemoFailsChildren } from './MemoFailsChildren'
+export { ExpensiveChild } from './ExpensiveChild'
+export type { ChildConfig, ExpensiveChildProps } from './types'

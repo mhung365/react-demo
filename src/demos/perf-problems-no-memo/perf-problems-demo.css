@@ -1,0 +1,278 @@
+/* Performance problems memo can't fix */
+.perf-problems-demo {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.perf-problems-demo__header {
+  margin-bottom: 1.5rem;
+}
+
+.perf-problems-demo__header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.perf-problems-demo__subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+}
+
+.perf-problems-demo__tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.perf-problems-demo__tabs button {
+  padding: 0.5rem 1rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.perf-problems-demo__tabs button:hover {
+  background: #3f3f46;
+}
+
+.perf-problems-demo__tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.perf-problems-demo__concepts {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.perf-problems-demo__concepts h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.perf-problems-demo__concepts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: #d4d4d8;
+}
+
+.perf-problems-demo__concepts code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* Scenario block */
+.perf-scenario {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.perf-scenario--problem {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 1px rgba(185, 28, 28, 0.2);
+}
+
+.perf-scenario--try-memo {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.2);
+}
+
+.perf-scenario--correct {
+  border-color: #15803d;
+  box-shadow: 0 0 0 1px rgba(21, 128, 61, 0.2);
+}
+
+.perf-scenario__header {
+  margin-bottom: 1rem;
+}
+
+.perf-scenario__header h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.perf-scenario__header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}
+
+.perf-scenario__sub-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.perf-scenario__sub-tabs button {
+  padding: 0.4rem 0.75rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.perf-scenario__sub-tabs button:hover {
+  background: #3f3f46;
+}
+
+.perf-scenario__sub-tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.perf-scenario__measure {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  background: #27272a;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-family: ui-monospace, monospace;
+  color: #86efac;
+}
+
+.perf-scenario__measure--bad {
+  color: #f87171;
+}
+
+.perf-scenario input {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 280px;
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  border-radius: 4px;
+  color: #e4e4e7;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.perf-scenario input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* List containers */
+.perf-list-container {
+  height: 200px;
+  overflow: auto;
+  background: #27272a;
+  border-radius: 6px;
+  border: 1px solid #3f3f46;
+}
+
+.perf-list-item {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #3f3f46;
+  color: #d4d4d8;
+}
+
+.perf-list-item:last-child {
+  border-bottom: none;
+}
+
+/* Virtual list */
+.perf-virtual-list {
+  height: 200px;
+  overflow: auto;
+  background: #27272a;
+  border-radius: 6px;
+  border: 1px solid #3f3f46;
+  position: relative;
+}
+
+.perf-virtual-list__inner {
+  position: relative;
+  width: 100%;
+}
+
+.perf-virtual-list__item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #3f3f46;
+  color: #d4d4d8;
+  box-sizing: border-box;
+}
+
+/* Dashboard layout for poor state */
+.perf-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .perf-dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+.perf-dashboard__header {
+  grid-column: 1 / -1;
+  padding: 0.5rem;
+  background: #27272a;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #a1a1aa;
+}
+
+.perf-dashboard__sidebar {
+  padding: 0.75rem;
+  background: #27272a;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}
+
+.perf-dashboard__main {
+  padding: 0.75rem;
+  background: #27272a;
+  border-radius: 4px;
+  min-height: 120px;
+}
+
+.perf-hint {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #27272a;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+.perf-hint strong {
+  color: #e4e4e7;
+}
+
+.perf-hint--bad {
+  border-left: 3px solid #b91c1c;
+}
+
+.perf-hint--good {
+  border-left: 3px solid #15803d;
+}

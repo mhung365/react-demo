@@ -1,0 +1,193 @@
+.memo-cost-demo {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.memo-cost-demo__header {
+  margin-bottom: 1.5rem;
+}
+
+.memo-cost-demo__header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.memo-cost-demo__subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+}
+
+.memo-cost-demo__tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.memo-cost-demo__tabs button {
+  padding: 0.5rem 1rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.memo-cost-demo__tabs button:hover {
+  background: #3f3f46;
+}
+
+.memo-cost-demo__tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.memo-cost-demo__concepts {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.memo-cost-demo__concepts h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.memo-cost-demo__concepts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: #d4d4d8;
+}
+
+.memo-cost-demo__concepts code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* Card */
+.memo-cost-card {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.memo-cost-card--correct {
+  border-color: #15803d;
+  box-shadow: 0 0 0 1px rgba(21, 128, 61, 0.2);
+}
+
+.memo-cost-card--wrong {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 1px rgba(185, 28, 28, 0.2);
+}
+
+.memo-cost-card__header {
+  margin-bottom: 1rem;
+}
+
+.memo-cost-card__header h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.memo-cost-card__header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}
+
+.memo-cost-card__row {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.memo-cost-card__label {
+  display: inline-block;
+  margin-right: 0.5rem;
+  min-width: 10rem;
+  color: #a1a1aa;
+}
+
+.memo-cost-card__value {
+  color: #fbbf24;
+}
+
+.memo-cost-card__child {
+  display: block;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  background: #27272a;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.memo-cost-card button {
+  padding: 0.5rem 1rem;
+  background: #3f3f46;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.memo-cost-card button:hover {
+  background: #52525b;
+}
+
+.memo-cost-card__hint {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  color: #71717a;
+}
+
+.memo-cost-card__hint--wrong {
+  color: #f87171;
+}
+
+/* Dashboard: production-style with explicit timings */
+.memo-dashboard {
+  margin-top: 1rem;
+}
+
+.memo-dashboard__header {
+  margin-bottom: 1rem;
+}
+
+.memo-dashboard__header h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.memo-dashboard__header p {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}
+
+.memo-dashboard__tick {
+  font-weight: 600;
+  color: #e4e4e7;
+}
+
+.memo-dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.memo-dashboard__panel {
+  min-width: 0;
+}

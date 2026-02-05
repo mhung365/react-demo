@@ -1,0 +1,216 @@
+/* React.memo demo */
+.memo-demo {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.memo-demo__header {
+  margin-bottom: 1.5rem;
+}
+
+.memo-demo__header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.memo-demo__subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+}
+
+.memo-demo__tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.memo-demo__tabs button {
+  padding: 0.5rem 1rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.memo-demo__tabs button:hover {
+  background: #3f3f46;
+}
+
+.memo-demo__tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.memo-demo__concepts {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.memo-demo__concepts h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.memo-demo__concepts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: #d4d4d8;
+}
+
+.memo-demo__concepts code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* Parent / scenario blocks */
+.memo-scenario {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.memo-scenario--works {
+  border-color: #15803d;
+  box-shadow: 0 0 0 1px rgba(21, 128, 61, 0.2);
+}
+
+.memo-scenario--fails {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 1px rgba(185, 28, 28, 0.2);
+}
+
+.memo-scenario__header {
+  margin-bottom: 1rem;
+}
+
+.memo-scenario__header h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.memo-scenario__header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}
+
+.memo-scenario__actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.memo-scenario__actions button {
+  padding: 0.5rem 1rem;
+  background: #3f3f46;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.memo-scenario__actions button:hover {
+  background: #52525b;
+}
+
+.memo-scenario__actions button.primary {
+  background: #3b82f6;
+}
+
+.memo-scenario__actions button.primary:hover {
+  background: #2563eb;
+}
+
+/* Expensive child (shared) */
+.memo-expensive-child {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #27272a;
+  border-radius: 6px;
+}
+
+.memo-expensive-child__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.memo-expensive-child__meta .label {
+  color: #a1a1aa;
+}
+
+.memo-expensive-child__meta .render-count {
+  color: #fbbf24;
+}
+
+.memo-expensive-child__meta .memo-result {
+  font-weight: 600;
+}
+
+.memo-expensive-child__meta .memo-result--skip {
+  color: #86efac;
+}
+
+.memo-expensive-child__meta .memo-result--re-render {
+  color: #f87171;
+}
+
+.memo-expensive-child__meta .config {
+  color: #a1a1aa;
+}
+
+.memo-expensive-child button {
+  padding: 0.4rem 0.75rem;
+  background: #3f3f46;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.memo-expensive-child button:hover {
+  background: #52525b;
+}
+
+.memo-expensive-child__children {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #3f3f46;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #d4d4d8;
+}
+
+.memo-hint {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #27272a;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+.memo-hint strong {
+  color: #e4e4e7;
+}

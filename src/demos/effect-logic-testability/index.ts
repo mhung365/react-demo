@@ -1,0 +1,5 @@
+export { EffectLogicTestabilityDemo } from './EffectLogicTestabilityDemo'
+export { HeavyLogicInEffect } from './HeavyLogicInEffect'
+export { RefactoredPureAndHook } from './RefactoredPureAndHook'
+export { useDashboardData } from './useDashboardData'
+export { processRawItems, validateItems, normalizeToViewModels, sortByUpdatedDesc, computeSummary } from './dashboardLogic'

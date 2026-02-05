@@ -1,0 +1,229 @@
+/* Premature memoization demo */
+.premature-memo-demo {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.premature-memo-demo__header {
+  margin-bottom: 1.5rem;
+}
+
+.premature-memo-demo__header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.premature-memo-demo__subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+}
+
+.premature-memo-demo__tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.premature-memo-demo__tabs button {
+  padding: 0.5rem 1rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.premature-memo-demo__tabs button:hover {
+  background: #3f3f46;
+}
+
+.premature-memo-demo__tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.premature-memo-demo__concepts {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.premature-memo-demo__concepts h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.premature-memo-demo__concepts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: #d4d4d8;
+}
+
+.premature-memo-demo__concepts code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* Dashboard blocks */
+.premature-dashboard {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.premature-dashboard--initial {
+  border-color: #3f3f46;
+}
+
+.premature-dashboard--premature {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 1px rgba(185, 28, 28, 0.2);
+}
+
+.premature-dashboard--refactor {
+  border-color: #15803d;
+  box-shadow: 0 0 0 1px rgba(21, 128, 61, 0.2);
+}
+
+.premature-dashboard--justified {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2);
+}
+
+.premature-dashboard__header {
+  margin-bottom: 1rem;
+}
+
+.premature-dashboard__header h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.premature-dashboard__header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}
+
+.premature-dashboard__actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.premature-dashboard__actions button {
+  padding: 0.5rem 1rem;
+  background: #3f3f46;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.premature-dashboard__actions button:hover {
+  background: #52525b;
+}
+
+.premature-dashboard__actions button.primary {
+  background: #3b82f6;
+}
+
+.premature-dashboard__actions button.primary:hover {
+  background: #2563eb;
+}
+
+.premature-dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.premature-metric-card {
+  background: #27272a;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
+
+.premature-metric-card__label {
+  color: #a1a1aa;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.premature-metric-card__value {
+  color: #e4e4e7;
+  font-weight: 600;
+}
+
+.premature-chart-block {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #27272a;
+  border-radius: 6px;
+  grid-column: 1 / -1;
+}
+
+.premature-chart-block__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #a1a1aa;
+}
+
+.premature-chart-block__meta .render-count {
+  color: #fbbf24;
+}
+
+.premature-chart-block__meta .ms {
+  color: #f87171;
+}
+
+.premature-chart-block__placeholder {
+  height: 60px;
+  background: #3f3f46;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #71717a;
+  font-size: 0.85rem;
+}
+
+.premature-hint {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #27272a;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+.premature-hint strong {
+  color: #e4e4e7;
+}
+
+.premature-hint--bad {
+  border-left: 3px solid #b91c1c;
+}
+
+.premature-hint--good {
+  border-left: 3px solid #15803d;
+}

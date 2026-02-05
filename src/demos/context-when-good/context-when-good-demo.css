@@ -1,0 +1,253 @@
+/* Context when good demo */
+.ctx-demo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.ctx-demo__section-header {
+  margin-bottom: 1.5rem;
+}
+
+.ctx-demo__section-header h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.ctx-demo__section-header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+  line-height: 1.5;
+}
+
+.ctx-demo__section-header code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.ctx-demo--noisy {
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #18181b;
+}
+
+.ctx-demo--appropriate {
+  border: 1px solid #15803d;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #18181b;
+  box-shadow: 0 0 0 1px rgba(21, 128, 61, 0.2);
+}
+
+.ctx-demo--overuse {
+  border: 1px solid #b91c1c;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #18181b;
+}
+
+.ctx-demo--refactored {
+  border: 1px solid #15803d;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #18181b;
+  box-shadow: 0 0 0 1px rgba(21, 128, 61, 0.2);
+}
+
+.ctx-demo__layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  min-height: 240px;
+}
+
+.ctx-demo__sidebar {
+  padding: 1rem;
+  background: #27272a;
+  border-radius: 6px;
+  min-width: 160px;
+}
+
+.ctx-demo__main {
+  padding: 1rem;
+  background: #27272a;
+  border-radius: 6px;
+}
+
+.ctx-demo__badge {
+  padding: 0.5rem 0.75rem;
+  background: #3f3f46;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.ctx-demo__role {
+  color: #a1a1aa;
+  font-size: 0.8rem;
+  margin-left: 0.35rem;
+}
+
+.ctx-demo__nav-item {
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.ctx-demo__nav-item[data-theme="dark"] {
+  background: #18181b;
+  color: #e4e4e7;
+}
+
+.ctx-demo__nav-item[data-theme="light"] {
+  background: #e4e4e7;
+  color: #18181b;
+}
+
+.ctx-demo__page {
+  padding: 0.5rem 0;
+}
+
+.ctx-demo__card {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.ctx-demo__card[data-theme="dark"] {
+  background: #3f3f46;
+  color: #e4e4e7;
+}
+
+.ctx-demo__card[data-theme="light"] {
+  background: #e4e4e7;
+  color: #18181b;
+}
+
+.ctx-demo__card p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.ctx-demo__card button {
+  padding: 0.4rem 0.75rem;
+  background: #52525b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.ctx-demo__card button:hover {
+  background: #71717a;
+}
+
+.ctx-demo__hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  color: #71717a;
+  line-height: 1.4;
+}
+
+.ctx-demo__hint--correct {
+  color: #22c55e;
+}
+
+.ctx-demo__hint--wrong {
+  color: #f87171;
+}
+
+.ctx-demo__extra {
+  min-height: 0;
+}
+
+/* Demo shell */
+.context-when-good-demo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.context-when-good-demo__header {
+  margin-bottom: 1.5rem;
+}
+
+.context-when-good-demo__header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.context-when-good-demo__subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+  line-height: 1.5;
+}
+
+.context-when-good-demo__subtitle code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.context-when-good-demo__tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.context-when-good-demo__tabs button {
+  padding: 0.5rem 1rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.context-when-good-demo__tabs button:hover {
+  background: #3f3f46;
+}
+
+.context-when-good-demo__tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.context-when-good-demo__concepts {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.context-when-good-demo__concepts h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.context-when-good-demo__concepts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: #d4d4d8;
+}
+
+.context-when-good-demo__concepts code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}

@@ -1,0 +1,169 @@
+.ref-demo {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.ref-demo__header {
+  margin-bottom: 1.5rem;
+}
+
+.ref-demo__header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.ref-demo__subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #a1a1aa;
+}
+
+.ref-demo__tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ref-demo__tabs button {
+  padding: 0.5rem 1rem;
+  background: #27272a;
+  color: #e4e4e7;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ref-demo__tabs button:hover {
+  background: #3f3f46;
+}
+
+.ref-demo__tabs button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.ref-demo__concepts {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.ref-demo__concepts h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+}
+
+.ref-demo__concepts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: #d4d4d8;
+}
+
+.ref-demo__concepts code {
+  background: #27272a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.ref-demo__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Card */
+.ref-demo-card {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.ref-demo-card--state {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.2);
+}
+
+.ref-demo-card--ref {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 1px rgba(168, 85, 247, 0.2);
+}
+
+.ref-demo-card--correct {
+  border-color: #15803d;
+  box-shadow: 0 0 0 1px rgba(21, 128, 61, 0.2);
+}
+
+.ref-demo-card--wrong {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 1px rgba(185, 28, 28, 0.2);
+}
+
+.ref-demo-card__header {
+  margin-bottom: 1rem;
+}
+
+.ref-demo-card__header h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.ref-demo-card__header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}
+
+.ref-demo-card__row {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.ref-demo-card__label {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #a1a1aa;
+}
+
+.ref-demo-card__value {
+  color: #fbbf24;
+}
+
+.ref-demo-card button {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #3f3f46;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ref-demo-card button:hover {
+  background: #52525b;
+}
+
+.ref-demo-card__actions {
+  margin-bottom: 1rem;
+}
+
+.ref-demo-card__hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #71717a;
+}
+
+.ref-demo-card__hint--wrong {
+  color: #f87171;
+}
